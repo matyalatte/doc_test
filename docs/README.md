@@ -50,10 +50,15 @@ You can see the built pages [here](https://matyalatte.github.io/doc_test/)
     bundle exec jekyll serve --baseurl=""
     ```
 
- ## How to deploy docs
+## How to deploy docs
 
  1.  Go to `Settings -> Pages -> Build and deployment -> Branch`.
  2.  Select a branch and the `/docs` folder.
  3.  Click the `save` button.
  4.  Github Actions will build docs with jekyll.
  5.  Built html files are available on `https://{user_name}.github.io/{repo_name}`
+
+## License
+
+All resources except for images are available under the MIT license.  
+The github icon in `docs/asset/images` is from the [official site](https://github.com/logos).  
