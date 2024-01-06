@@ -44,3 +44,6 @@ It selects a version from `Windows-x64`, `Windows-arm64`, `macOS`, `Linux-x64`, 
   showParseResult(result, "parsed_info");
   makeDownloadButton(result, "download_button");
 </script>
+
+Note that the download buttons require icons from [Google Fonts](https://fonts.google.com/icons).  
+See [the Fonts page]({{ site.baseurl }}{% link tips/Fonts.md %}#icons) for the details.  
