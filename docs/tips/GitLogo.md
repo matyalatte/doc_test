@@ -1,3 +1,17 @@
+---
+layout: default
+title: Git Logo
+nav_order: 3
+---
+
+# Git Logo
+
+Download the logo from the [official site](https://github.com/logos) and put them in `docs/assets/images/`.  
+Then, put the following code in `docs/_includes/header_custom.html`.  
+Your website puts the logo in the header to navigate users to your repo.  
+(Remove `<source srcset=.../>` if you won't use the dark theme.)  
+
+```html
 <nav aria-label="Auxiliary" class="aux-nav">
   <ul class="aux-nav-list">
     <li class="aux-nav-list-item">
@@ -14,3 +28,4 @@
     </li>
   </ul>
 </nav>
+```

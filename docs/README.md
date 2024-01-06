@@ -1,4 +1,4 @@
-# docs_test
+# doc_test
 
 My playground for [just-the-docs](https://github.com/just-the-docs/just-the-docs).  
 This repo is on public just for using github pages with my free account.  

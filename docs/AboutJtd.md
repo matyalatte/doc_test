@@ -1,11 +1,13 @@
 ---
 layout: about
-title: About
+title: About Just the Docs
 permalink: /about/
 nav_order: 100
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About Just the Docs
+
+[Just the Docs](https://github.com/just-the-docs/just-the-docs) is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
 [jekyll][jekyll-organization] /

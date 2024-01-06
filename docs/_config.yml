@@ -18,12 +18,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Test title"
+title: "doc_test"
 email: matyalatte@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My playground for just-the-docs.
+  This repo is on public just for using github pages with my free account.
 baseurl: "/doc_test" # the subpath of your site, e.g. /blog
 url: "https://matyalatte.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: matyalatte/doc_test
@@ -34,9 +33,6 @@ remote_theme: matyalatte/just-the-docs@add_group_option
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-
-include:
-  - node_modules
 
 # github
 github: [metadata]
@@ -52,19 +48,6 @@ callouts:
     color: red
 
 color_scheme: custom
-
-exclude:
-  - .sass-cache/
-  - .jekyll-cache/
-  - gemfiles/
-  - Gemfile
-  - Gemfile.lock
-  - package.json
-  - package-lock.json
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
 
 # custom variables
 tool_name: Tool
