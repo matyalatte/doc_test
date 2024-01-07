@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Fonts
-nav_order: 2
+title: Fonts and Icons
+nav_order: 1
 ---
 
 # Fonts and Icons
@@ -33,15 +33,6 @@ To use the icon, you should put the following code in `docs/_includes/head_custo
 
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-```
-
-You should also put the following code in `docs/_sass/custom/custom.scss`.  
-
-```scss
-.inline-flex {
-  display: inline-flex;
-  align-items: center;
-}
 ```
 
 Then, you can use the icon like this.

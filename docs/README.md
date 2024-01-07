@@ -25,7 +25,7 @@ You can see the built pages [here](https://matyalatte.github.io/doc_test/)
     repository: matyalatte/doc_test
 
     # My custom branch
-    remote_theme: matyalatte/just-the-docs@add_group_option
+    remote_theme: matyalatte/just-the-docs@custom
 
     plugins:
     - jekyll-feed

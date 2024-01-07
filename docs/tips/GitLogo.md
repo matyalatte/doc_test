@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Git Logo
-nav_order: 3
+nav_order: 1
 ---
 
 # Git Logo
@@ -9,7 +9,6 @@ nav_order: 3
 Download the logo from the [official site](https://github.com/logos) and put them in `docs/assets/images/`.  
 Then, put the following code in `docs/_includes/header_custom.html`.  
 Your website puts the logo in the header to navigate users to your repo.  
-(Remove `<source srcset=.../>` if you won't use the dark theme.)  
 
 ```html
 <nav aria-label="Auxiliary" class="aux-nav">
@@ -18,12 +17,9 @@ Your website puts the logo in the header to navigate users to your repo.
       <a href="//github.com/{{ site.repository }}"
         class="site-button" title="View it on Github"
       >
-        <picture>
-          <source srcset="{{'/assets/images/github-mark-white.svg' | relative_url}}" media="(prefers-color-scheme: dark)"/>
-          <img src="{{'/assets/images/github-mark.svg' | relative_url}}" alt="git logo"
-            style='height: 32px; width: 32px; object-fit: contain'
-          >
-        </picture>
+        <img src="{{'/assets/images/github-mark.svg' | relative_url}}" alt="git logo"
+          style='height: 32px; width: 32px; object-fit: contain'
+        >
       </a>
     </li>
   </ul>

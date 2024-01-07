@@ -4,12 +4,14 @@
       <a href="//github.com/{{ site.repository }}"
         class="site-button" title="View it on Github"
       >
-        <picture>
-          <source srcset="{{'/assets/images/github-mark-white.svg' | relative_url}}" media="(prefers-color-scheme: dark)"/>
-          <img src="{{'/assets/images/github-mark.svg' | relative_url}}" alt="git logo"
-            style='height: 32px; width: 32px; object-fit: contain'
-          >
-        </picture>
+        <img src="{{'/assets/images/github-mark.svg' | relative_url}}" alt="git logo"
+          class="obj-default-theme"
+          style='height: 32px; width: 32px; object-fit: contain'
+        >
+        <img src="{{'/assets/images/github-mark-white.svg' | relative_url}}" alt="git logo"
+          class="obj-dark-theme"
+          style='height: 32px; width: 32px; object-fit: contain'
+        >
       </a>
     </li>
   </ul>

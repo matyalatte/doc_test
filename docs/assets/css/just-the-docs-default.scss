@@ -1,0 +1,27 @@
+---
+---
+@charset "UTF-8";
+{% if site.color_scheme and site.color_scheme != "nil" %}
+  {% assign color_scheme = site.color_scheme %}
+{% else %}
+  {% assign color_scheme = "light" %}
+{% endif %}
+
+.theme-default {
+  {% include css/just-the-docs.scss.liquid color_scheme=color_scheme %}
+  .obj-default-theme {
+    display:block;
+  }
+  .obj-dark-theme {
+    display:none;
+  }
+}
+.theme-dark {
+  {% include css/just-the-docs.scss.liquid color_scheme="dark" %}
+  .obj-default-theme{
+    display:none;
+  }
+  .obj-dark-theme{
+    display:block;
+  }
+}

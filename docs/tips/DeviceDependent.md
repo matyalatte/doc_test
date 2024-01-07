@@ -1,16 +1,17 @@
 ---
 layout: default
-title: UAParser.js
-nav_order: 4
+title: Device Dependent Layout
+nav_order: 1
 ---
 
-# UAParser.js
+# Device Dependent Layout
 
-This page uses [UAParser.js](https://github.com/faisalman/ua-parser-js) to parse user agents (that you sent to the server when opening this page).  
+This page parses user agents with [UAParser.js](https://github.com/faisalman/ua-parser-js).  
+You can use it to detect user's OS, CPU architecture, device type, etc.  
 
 ## Parsed info
 
-User agents contain info about your environment.
+Your user agent contains the following information.  
 
 <span id="parsed_info"></span>  
 
@@ -24,7 +25,9 @@ It selects a version from `Windows-x64`, `Windows-arm64`, `macOS`, `Linux-x64`, 
 
 ```html
 <span id="download_button"></span>  
+{% raw %}
 [Looking for other versions?](https://github.com/{{ site.repository }}/releases)  
+{% endraw %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/1.0.37/ua-parser.min.js"></script>
 <script src="{{ '/assets/js/ua-parser-helper.js' | relative_url }}"></script>
