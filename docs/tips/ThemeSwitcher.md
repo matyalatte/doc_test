@@ -72,7 +72,7 @@ jtd.initTheme = function() {
 }
 
 jtd.setTheme = function(theme) {
-  let old_theme = jtd.getTheme();
+  let old_theme = this.getTheme();
   if (theme != old_theme) {
     localStorage.setItem('theme', theme);
     document.documentElement.classList.add('theme-' + theme);
@@ -96,10 +96,8 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('default');
-    toggleDarkMode.textContent = "☀️";
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = "🌙";
   }
 });
 </script>
@@ -116,10 +114,8 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
     jtd.setTheme('default');
-    toggleDarkMode.textContent = "☀️";
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = "🌙";
   }
 });
 </script>

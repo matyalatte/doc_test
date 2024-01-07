@@ -60,5 +60,5 @@ You can see the built pages [here](https://matyalatte.github.io/doc_test/)
 
 ## License
 
-All resources except for images are available under the MIT license.  
+All resources (except for fonts and images) are available under the MIT license.  
 The github icon in `docs/assets/images` is from the [official site](https://github.com/logos).  

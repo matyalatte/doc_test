@@ -501,7 +501,7 @@ jtd.initTheme = function() {
 }
 
 jtd.setTheme = function(theme) {
-  let old_theme = jtd.getTheme();
+  let old_theme = this.getTheme();
   if (theme != old_theme) {
     localStorage.setItem('theme', theme);
     document.documentElement.classList.add('theme-' + theme);
