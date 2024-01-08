@@ -17,7 +17,7 @@
   }
 }
 .theme-dark {
-  {% include css/just-the-docs.scss.liquid color_scheme="dark" %}
+  {% include css/just-the-docs.scss.liquid color_scheme="custom_dark" %}
   .obj-default-theme{
     display:none;
   }

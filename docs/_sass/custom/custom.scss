@@ -1,8 +1,43 @@
 // font sizes
 code {
-  font-size: $font-size-4;
+  @include fs-3;
 }
 
+main {
+  @include fs-4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.site-title,
+#toctitle {
+  font-weight: var(--base-text-weight-semibold, 600);;
+}
+
+// indices for lists.
+.main-content {
+  ol {
+    > li {
+      &::before {
+        position: absolute;
+        top: 0em;
+        left: -1.45em;
+        content: counter(step-counter)".";
+        @include fs-4;
+
+        @include mq(sm) {
+          top: 0em;
+        }
+      }
+    }
+  }
+}
+
+// icon buttons
 .btn-icon {
   background-color: rgba(0, 0, 0, 0);
   color: $body-text-color;
