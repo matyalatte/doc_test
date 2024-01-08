@@ -1,38 +1,31 @@
-<button class="btn btn-theme js-theme-switcher" title="Toggle Dark/Light Mode">
-  <span class="obj-default-theme material-symbols-outlined">
-    light_mode
-  </span>
-  <span class="obj-dark-theme material-symbols-outlined">
-    dark_mode
-  </span>
+
+<button class="btn btn-icon js-theme-switcher"
+  style="padding: 0.5em 0.4em 0.5em 0.8em;" title="Toggle Dark/Light Mode"
+>
+  <svg viewBox="0 0 16 16" class="icon obj-default-theme" title="Toggle Dark Mode">
+    <use xlink:href="#svg-sun" title="Toggle Dark Mode"></use>
+  </svg>
+  <svg viewBox="0 0 16 16" class="icon obj-dark-theme" title="Toggle Light Mode">
+    <use xlink:href="#svg-moon"></use>
+  </svg>
 </button>
+
+<button class="btn btn-icon" style="padding: 0.5em 0.8em 0.5em 0.4em;" title="View it on Github"
+  onclick="window.location.href='//github.com/{{ site.repository }}';"
+>
+  <svg viewBox="0 0 16 16" class="icon" style="display: flex;" title="View it on Github">
+    <use xlink:href="#svg-git" title="View it on Github"></use>
+  </svg>
+</button>
+
 <script>
-const themeSwitcher = document.querySelector('.js-theme-switcher');
+  const themeSwitcher = document.querySelector('.js-theme-switcher');
 
-jtd.addEvent(themeSwitcher, 'click', function() {
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('default');
-  } else {
-    jtd.setTheme('dark');
-  }
-});
+  jtd.addEvent(themeSwitcher, 'click', function() {
+    if (jtd.getTheme() === 'dark') {
+      jtd.setTheme('default');
+    } else {
+      jtd.setTheme('dark');
+    }
+  });
 </script>
-
-<nav aria-label="Auxiliary" class="aux-nav">
-  <ul class="aux-nav-list">
-    <li class="aux-nav-list-item">
-      <a href="//github.com/{{ site.repository }}"
-        class="site-button" title="View it on Github"
-      >
-        <img src="{{'/assets/images/github-mark.svg' | relative_url}}" alt="git logo"
-          class="obj-default-theme"
-          style='height: 32px; width: 32px; object-fit: contain'
-        >
-        <img src="{{'/assets/images/github-mark-white.svg' | relative_url}}" alt="git logo"
-          class="obj-dark-theme"
-          style='height: 32px; width: 32px; object-fit: contain'
-        >
-      </a>
-    </li>
-  </ul>
-</nav>

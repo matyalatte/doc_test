@@ -3,15 +3,19 @@ code {
   font-size: $font-size-4;
 }
 
-// theme toggle button
-.btn-theme {
+.btn-icon {
   background-color: rgba(0, 0, 0, 0);
   color: $body-text-color;
-  padding: 0.4em;
-  margin: 0.5em;
-  line-height: 1.5;
-  font-size: $font-size-6;
+  align-items: center;
   box-shadow: none;
+
+  .icon {
+    color: $body-text-color;
+    pointer-events: none;
+    align-items: center;
+    transform: scale(1);
+    transition: all 0.3s;
+  }
 
   &:focus {
     box-shadow: none;
@@ -22,25 +26,22 @@ code {
     box-shadow: none;
   }
 
-  .material-symbols-outlined {
-    transform: scale(1);
-    transition: all 0.3s;
-  }
-
   &:hover,
   &:active,
   &.zeroclipboard-is-hover,
   &.zeroclipboard-is-active {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0);
+    .icon {
+      color: $link-color;
+    }
   }
 
   &:active,
   &.selected,
   &.zeroclipboard-is-active {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0);
     box-shadow: none;
-
-    .material-symbols-outlined {
+    .icon {
       transform: scale(0.6);
       transition: all 0.3s;
     }

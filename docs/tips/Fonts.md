@@ -28,27 +28,21 @@ $mono-font-family: "Noto Sans Mono", "SFMono-Regular", menlo, consolas, monospac
 
 ## Icons
 
-This website uses the download icon from [Google Fonts](https://fonts.google.com/icons).  
-To use the icon, you should put the following code in `docs/_includes/head_custom.html`.  
+`docs/_includes/icons` includes [Bootstrap Icons](https://icons.getbootstrap.com/).  
+You can use them like this.  
+
+<a href="https://url_here"><svg viewBox="0 0 16 16" class="icon" style="width:1em; vertical-align: -0.35em"><use xlink:href="#svg-download"></use></svg>&nbsp;Download Link</a>
 
 ```html
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<a href="https://url_here"><svg viewBox="0 0 16 16" class="icon" style="width:1em; vertical-align: -0.35em"><use xlink:href="#svg-download"></use></svg>&nbsp;Download Link</a>
 ```
 
-Then, you can use the icon like this.
-
-<a href="https://url_here">
-  <span class="material-symbols-outlined" style="vertical-align: -0.25em;">
-    download
-  </span>
-  Download Link
-</a>
+<svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-git"></use></svg>
+<svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-sun"></use></svg>
+<svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-moon"></use></svg>
 
 ```html
-<a href="https://url_here">
-  <span class="material-symbols-outlined" style="vertical-align: -0.25em;">
-    download
-  </span>
-  Download Link
-</a>
+<svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-git"></use></svg>
+<svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-sun"></use></svg>
+<svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-moon"></use></svg>
 ```

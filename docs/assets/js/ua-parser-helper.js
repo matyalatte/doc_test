@@ -97,9 +97,9 @@ function makeDownloadButton(result, id) {
 
   mainURL = "https://github.com/{{ site.repository }}/releases/download/" + TOOL_TAG + "/" + mainStr;
   mainHTML = `<a href="` + mainURL + `" class="btn btn-blue">` + 
-             `<span class="material-symbols-outlined" style="vertical-align: -0.25em;">
-                download
-              </span>&thinsp;
+             `<svg viewBox="0 0 16 16" class="icon" style="width:1em; color:white; vertical-align: -0.35em">
+                <use xlink:href="#svg-download"></use>
+              </svg>&thinsp;
               Download ` + mainStr + `</a><br>`;
   baseHTML += mainHTML;
   baseElement.innerHTML = baseHTML;

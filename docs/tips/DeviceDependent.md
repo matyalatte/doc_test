@@ -24,10 +24,8 @@ It selects a version from `Windows-x64`, `Windows-arm64`, `macOS`, `Linux-x64`, 
 [Looking for other versions?](https://github.com/{{ site.repository }}/releases)  
 
 ```html
-<span id="download_button"></span>  
-{% raw %}
-[Looking for other versions?](https://github.com/{{ site.repository }}/releases)  
-{% endraw %}
+<span id="download_button"></span>
+{% raw %}[Looking for other versions?](https://github.com/{{ site.repository }}/releases){% endraw %}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/1.0.37/ua-parser.min.js"></script>
 <script src="{{ '/assets/js/ua-parser-helper.js' | relative_url }}"></script>
@@ -36,7 +34,6 @@ It selects a version from `Windows-x64`, `Windows-arm64`, `macOS`, `Linux-x64`, 
   const result = parser.getResult();
   makeDownloadButton(result, "download_button");
 </script>
-
 ```
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/UAParser.js/1.0.37/ua-parser.min.js"></script>
@@ -48,5 +45,5 @@ It selects a version from `Windows-x64`, `Windows-arm64`, `macOS`, `Linux-x64`, 
   makeDownloadButton(result, "download_button");
 </script>
 
-Note that the download buttons require icons from [Google Fonts](https://fonts.google.com/icons).  
-See [the Fonts page]({{ site.baseurl }}{% link tips/Fonts.md %}#icons) for the details.  
+Note that the download buttons require icons in `docs/_includes/icons`.  
+See the [Fonts and Icons]({{ site.baseurl }}{% link tips/Fonts.md %}#icons) page for the details.  

@@ -10,7 +10,7 @@
 .theme-default {
   {% include css/just-the-docs.scss.liquid color_scheme=color_scheme %}
   .obj-default-theme {
-    display:block;
+    display:flex;
   }
   .obj-dark-theme {
     display:none;
@@ -22,6 +22,6 @@
     display:none;
   }
   .obj-dark-theme{
-    display:block;
+    display:flex;
   }
 }
