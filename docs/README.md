@@ -7,6 +7,7 @@ You can see the built pages [here](https://matyalatte.github.io/doc_test/)
 ## How to use just-the-docs with Git Bash on Windows
 
 1.  Install `Ruby+Devkit` from [here](https://rubyinstaller.org/downloads/)
+
 2.  Choose `MSYS2 and MINGW development tool chain` in the installer.
 
 3.  Install gems and create a new folder on Git Bash
@@ -52,12 +53,16 @@ You can see the built pages [here](https://matyalatte.github.io/doc_test/)
 
 ## How to deploy docs
 
- 1.  Go to `Settings -> Pages -> Build and deployment -> Branch`.
- 2.  Select a branch and the `/docs` folder.
- 3.  Click the `save` button.
- 4.  Github Actions will build docs with jekyll.
- 5.  Built html files are available on `https://{user_name}.github.io/{repo_name}`
+1.  Go to `Settings -> Pages -> Build and deployment -> Branch`.
+
+2.  Select a branch and the `/docs` folder.
+
+3.  Click the `save` button.
+
+4.  Github Actions will build docs with jekyll.
+
+5.  Built html files are available on `https://{user_name}.github.io/{repo_name}`
 
 ## License
 
-All resources (except for fonts) are available under the MIT license.  
+All resources are available under the MIT license.  

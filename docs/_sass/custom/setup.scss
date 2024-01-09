@@ -1,2 +1,4 @@
-$body-font-family: "Noto Sans", sans-serif, system-ui, -apple-system, blinkmacsystemfont, roboto, "Segoe UI Emoji";
-$mono-font-family: "Noto Sans Mono", "SFMono-Regular", menlo, consolas, monospace;
+// expand line height a little bit
+$content-line-height: 1.7;
+// keep the height on small display
+$content-line-height-sm: 1.6;

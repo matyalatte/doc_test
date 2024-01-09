@@ -46,4 +46,4 @@ It selects a version from `Windows-x64`, `Windows-arm64`, `macOS`, `Linux-x64`, 
 </script>
 
 Note that the download buttons require icons in `docs/_includes/icons`.  
-See the [Fonts and Icons]({{ site.baseurl }}{% link tips/Fonts.md %}#icons) page for the details.  
+See the [Icons]({{ site.baseurl }}{% link tips/Icons.md %}) page for the details.  

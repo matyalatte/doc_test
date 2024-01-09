@@ -1,10 +1,11 @@
-// font sizes
+// use larger fonts
 code {
   @include fs-3;
 }
 
-main {
-  @include fs-4;
+:not(pre, figure) > code {
+  padding: 0.15em 0.15em;
+  border: none;
 }
 
 h1,
@@ -18,12 +19,11 @@ h6,
   font-weight: var(--base-text-weight-semibold, 600);;
 }
 
-// indices for lists.
 .main-content {
+  // use larger fonts for list indices.
   ol {
     > li {
       &::before {
-        position: absolute;
         top: 0em;
         left: -1.45em;
         content: counter(step-counter)".";
@@ -33,6 +33,39 @@ h6,
           top: 0em;
         }
       }
+    }
+  }
+
+  // move the dots to right a little.
+  ul {
+    > li {
+      &::before {
+        margin-left: -1.3em;
+      }
+    }
+  }
+
+  line-height: $content-line-height-sm;
+  @include mq(sm) {
+    line-height: $content-line-height;
+  }
+
+  // expand margins after the h tags
+  h1 {
+    margin-bottom: 0.4em;
+    @include mq(sm) {
+      margin-bottom: 0.6em;
+    }
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0.6em;
+    @include mq(sm) {
+      margin-bottom: 0.8em;
     }
   }
 }
@@ -86,6 +119,7 @@ h6,
 // the main navigator
 .nav-list {
   .nav-list-item {
+
     > .nav-list {
       .nav-list-item {
         a.nav-list-link {

@@ -7,6 +7,8 @@
   {% assign color_scheme = "light" %}
 {% endif %}
 
+{% include css/just-the-docs.scss.liquid color_scheme=color_scheme %}
+
 .theme-default {
   {% include css/just-the-docs.scss.liquid color_scheme=color_scheme %}
   .obj-default-theme {
