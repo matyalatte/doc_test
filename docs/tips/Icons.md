@@ -18,9 +18,11 @@ You can use them like this.
 <svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-git"></use></svg>
 <svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-sun"></use></svg>
 <svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-moon"></use></svg>
+<svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-cancel"></use></svg>
 
 ```html
 <svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-git"></use></svg>
 <svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-sun"></use></svg>
 <svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-moon"></use></svg>
+<svg viewBox="0 0 16 16" class="icon"><use xlink:href="#svg-cancel"></use></svg>
 ```

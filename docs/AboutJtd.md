@@ -2,7 +2,7 @@
 layout: about
 title: About Just the Docs
 permalink: /about/
-nav_order: 100
+nav_order: 99
 ---
 
 # About Just the Docs
