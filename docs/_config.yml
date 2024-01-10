@@ -39,8 +39,8 @@ github: [metadata]
 
 # just-the-docs
 nav_external_links:
-  - title: View it on GitHub
-    url: https://github.com/matyalatte/doc_test
+  - title: Just the Docs
+    url: https://github.com/just-the-docs/just-the-docs
 
 callouts:
   warning:
@@ -61,6 +61,5 @@ gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into t
 
 color_scheme: custom
 
-# custom variables
-tool_name: Tool
-tool_tag: v0.1.0
+# the project version
+git_tag: v0.1.0

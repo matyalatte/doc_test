@@ -1,8 +1,8 @@
 ---
 ---
-// Define "tool_name" and "tool_tag" in _config.yml to use ua-parser-helper.js
-const TOOL_NAME = "{{ site.tool_name }}";
-const TOOL_TAG = "{{ site.tool_tag }}";
+// Define "git_tag" in _config.yml to use ua-parser-helper.js
+const TOOL_NAME = "{{ site.title }}";
+const TOOL_TAG = "{{ site.git_tag }}";
 
 function nullToStr(str) {
   return str == null ? "Undefined" : str;

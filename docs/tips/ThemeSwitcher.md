@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Theme Switcher
-nav_order: 1
+nav_order: 3
 ---
 
 # Theme Switcher
@@ -12,8 +12,7 @@ You can set the classes to the `<html>` tag with `jtd.setTheme()`.
 You can also set the user's prefered theme or a cached theme with `jtd.initTheme()`.  
 
 ```scss
-{% raw %}
-// just-the-docs-default.scss
+{% raw %}// just-the-docs-default.scss
 @charset "UTF-8";
 {% if site.color_scheme and site.color_scheme != "nil" %}
   {% assign color_scheme = site.color_scheme %}
@@ -21,25 +20,30 @@ You can also set the user's prefered theme or a cached theme with `jtd.initTheme
   {% assign color_scheme = "light" %}
 {% endif %}
 
+// some classes should not be defined with a theme class.
+{% include css/just-the-docs.scss.liquid color_scheme=color_scheme %}
+
+// the default theme
 .theme-default {
   {% include css/just-the-docs.scss.liquid color_scheme=color_scheme %}
   .obj-default-theme {
-    display:block;
+    display:flex;
   }
   .obj-dark-theme {
     display:none;
   }
 }
+
+// the dark theme
 .theme-dark {
-  {% include css/just-the-docs.scss.liquid color_scheme="dark" %}
+  {% include css/just-the-docs.scss.liquid color_scheme="custom_dark" %}
   .obj-default-theme{
     display:none;
   }
   .obj-dark-theme{
-    display:block;
+    display:flex;
   }
-}
-{% endraw %}
+}{% endraw %}
 ```
 
 ```js

@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Animated Menu
-nav_order: 1
+nav_order: 0
 ---
 
 # Animated Menu
 
-This website uses [`docs/_sass/custom/animated_menu.scss`](//github.com/{{ site.repository }}/blob/main/docs/_sass/custom/animated_menu.css) to animate the menu bar.  
+This website uses [`docs/_sass/custom/animated_menu.scss`](//github.com/{{ site.repository }}/blob/main/docs/_sass/custom/animated_menu.scss) to animate the menu bar.  
 You can use it by including the scss file into `custom.scss`.
 
 ```scss
@@ -91,4 +91,17 @@ The max height of the navigation bar is animated with css.
 }
 
 // apply the same method to .main-header and .nav-list
+```
+
+## nav-list-filler
+
+[`docs/_sass/custom/animated_menu.scss`](//github.com/{{ site.repository }}/blob/main/docs/_sass/custom/animated_menu.scss) hides objects with non-transparent backgrounds, not with the opacity or display attributes.  
+So, you should fill the side bar with a non-transparent object (`nav-list-filler`).  
+
+```html
+<!-- docs/_includes/components/site_nav.html -->
+<nav aria-label="Main" id="site-nav" class="site-nav">
+  ...
+  <div class="nav-list-filler"></div>
+</nav>
 ```
