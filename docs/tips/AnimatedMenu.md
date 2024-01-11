@@ -34,7 +34,6 @@ The toggle button uses two icons, and their scales are animated with css.
 .site-button {
   display: grid;
   .icon {
-    background-color: rgba(0, 0, 0, 0);
     transition: 0.5s;
     transform: scale(1);
     grid-column-start: 1;
@@ -62,28 +61,22 @@ The max height of the navigation bar is animated with css.
 ```scss
 // docs/_sass/custom/animated_menu.scss
 .site-nav {
-  z-index: 0;
   display: block;
-  position: relative;
   max-height: 0;
   transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  overflow: clip;
 
   &.nav-open {
     display: block;
-    position: relative;
     max-height: 1000px;
     transition: max-height 1s ease-in-out;
   }
 
   @include mq(md) {
-    position: relative;
     max-height: none;
     transition: 0s;
-    display: flex;
-    flex-flow: column;
 
     &.nav-open {
-      display: flex;
       max-height: none;
       transition: 0s;
     }
@@ -91,17 +84,4 @@ The max height of the navigation bar is animated with css.
 }
 
 // apply the same method to .main-header and .nav-list
-```
-
-## nav-list-filler
-
-[`docs/_sass/custom/animated_menu.scss`](//github.com/{{ site.repository }}/blob/main/docs/_sass/custom/animated_menu.scss) hides objects with non-transparent backgrounds, not with the opacity or display attributes.  
-So, you should fill the side bar with a non-transparent object (`nav-list-filler`).  
-
-```html
-<!-- docs/_includes/components/site_nav.html -->
-<nav aria-label="Main" id="site-nav" class="site-nav">
-  ...
-  <div class="nav-list-filler"></div>
-</nav>
 ```

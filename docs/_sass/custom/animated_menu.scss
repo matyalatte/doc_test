@@ -1,34 +1,21 @@
-// put the main content and the title bar in front with non-transparent background.
-.main-content-wrap {
-  z-index: 100;
-  position: relative;
-  background-color: $body-background-color;
-}
-
 // animated site-nav
 .site-nav {
-  z-index: 0;
   display: block;
-  position: relative;
   max-height: 0;
   transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  overflow: clip;
 
   &.nav-open {
     display: block;
-    position: relative;
     max-height: 1000px;
     transition: max-height 1s ease-in-out;
   }
 
   @include mq(md) {
-    position: relative;
     max-height: none;
     transition: 0s;
-    display: flex;
-    flex-flow: column;
 
     &.nav-open {
-      display: flex;
       max-height: none;
       transition: 0s;
     }
@@ -37,51 +24,34 @@
 
 // animated main-header
 .main-header {
-  z-index: 0;
   display: block;
-  position: relative;
   max-height: 0;
   transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  overflow: clip;
 
   @include mq(md) {
-    display: flex;
-    justify-content: space-between;
-    height: $header-height;
     max-height: none;
-    position: relative;
     transition: 0s;
   }
 
   &.nav-open {
-    z-index: 0;
     display: block;
-    position: relative;
     max-height: 1000px;
     transition: max-height 1s ease-in-out;
 
     @include mq(md) {
-      display: flex;
       max-height: none;
       transition: 0s;
-      position: relative;
     }
   }
 }
 
 // animated nav-list-item for root pages
 .site-nav > .nav-list {
-  z-index: 2;
-  position: relative;
-  background-color: $sidebar-color;
-
+  overflow: clip;
   .nav-list-item {
-    z-index: 1;
-    position: relative;
-    background-color: $sidebar-color;
-
     .nav-list {
       display: block;
-      position: relative;
       max-height: 0;
       transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
     }
@@ -89,7 +59,6 @@
     &.active {
       .nav-list {
         display: block;
-        position: relative;
         max-height: 1000px;
         transition: max-height 1s ease-in-out;
       }
@@ -99,49 +68,24 @@
 
 // animated nav-list-item for child pages
 .site-nav > .nav-list > .nav-list-item > .nav-list {
-  z-index: 1;
-  position: relative;
-  background-color: $sidebar-color;
-
   .nav-list-item {
-    z-index: 0;
-    position: relative;
-    background-color: $sidebar-color;
-  
     .nav-list {
       display: block;
-      position: relative;
       max-height: 0;
       transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
-      z-index: 0;
     }
 
     &.active {
       .nav-list {
         display: block;
-        position: relative;
         max-height: 1000px;
         transition: max-height 1s ease-in-out;
-        z-index: 0;
       }
     }
   }
 }
 
-// fill nav-list with $sidebar-color
-.nav-list-filler {
-  display: none;
-  background-color: $sidebar-color;
-  z-index: 2;
-  position: relative;
-  @include mq(md) {
-    display: flex;
-    flex: 1 1 auto;
-    z-index: 2;
-  }
-}
-
-// animate menu button
+// animated menu button
 .site-button {
   display: grid;
   .icon {

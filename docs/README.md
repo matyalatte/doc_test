@@ -6,7 +6,7 @@ You can see the built pages [here](https://matyalatte.github.io/doc_test/)
 
 ## How to use just-the-docs with Git Bash on Windows
 
-1.  Install `Ruby+Devkit` from [here](https://rubyinstaller.org/downloads/)
+1.  Install [`Ruby+Devkit`](https://rubyinstaller.org/downloads/).
 
 2.  Choose `MSYS2 and MINGW development tool chain` in the installer.
 

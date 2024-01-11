@@ -1,6 +1,10 @@
 // use larger fonts
 code {
-  @include fs-3;
+  font-size: 0.825rem !important; // a little bit larger than font-size-3
+
+  @include mq(sm) {
+    font-size: $font-size-4 !important;
+  }
 }
 
 :not(pre, figure) > code {
@@ -131,6 +135,16 @@ h6,
         }
       }
     }
+  }
+}
+
+// change the layout of site-footer a little bit
+.site-footer {
+  text-align: right;
+  padding: 0.5rem 1rem 1rem 1rem;
+  @include mq(md) {
+    text-align: center;
+    padding: 1rem 0.5rem;
   }
 }
 
