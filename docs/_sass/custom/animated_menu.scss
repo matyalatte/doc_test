@@ -9,15 +9,18 @@
     display: block;
     max-height: 1000px;
     transition: max-height 1s ease-in-out;
+    overflow: clip;
   }
 
   @include mq(md) {
     max-height: none;
     transition: 0s;
+    overflow: auto;
 
     &.nav-open {
       max-height: none;
       transition: 0s;
+      overflow: auto;
     }
   }
 }

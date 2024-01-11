@@ -17,9 +17,9 @@ You can use it by including the scss file into `custom.scss`.
 Note that the menu bar require icons in `docs/_includes/icons`.  
 See the [Icons]({{ site.baseurl }}{% link tips/Icons.md %}) page for the details.  
 
-## Toggle Button
+## Menu Button
 
-The toggle button uses two icons, and their scales are animated with css.  
+The menu button uses two icons, and their scales are animated with css.  
 
 ```html
 <!-- docs/_includes/components/sidebar.html -->
@@ -70,15 +70,18 @@ The max height of the navigation bar is animated with css.
     display: block;
     max-height: 1000px;
     transition: max-height 1s ease-in-out;
+    overflow: clip;
   }
 
   @include mq(md) {
     max-height: none;
     transition: 0s;
+    overflow: auto;
 
     &.nav-open {
       max-height: none;
       transition: 0s;
+      overflow: auto;
     }
   }
 }
