@@ -1,14 +1,18 @@
+$animated-menu-max-height: 1000px;  // max-height when opening the manu bar
+$animated-menu-duration-open: 1s;  // duration for opening animation
+$animated-menu-duration-close: 0.5s;  // duration for colsing animation
+
 // animated site-nav
 .site-nav {
   display: block;
   max-height: 0;
-  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  transition: max-height $animated-menu-duration-close cubic-bezier(0, 1, 0, 1);
   overflow: clip;
 
   &.nav-open {
     display: block;
-    max-height: 1000px;
-    transition: max-height 1s ease-in-out;
+    max-height: $animated-menu-max-height;
+    transition: max-height $animated-menu-duration-open ease-in-out;
     overflow: clip;
   }
 
@@ -29,7 +33,7 @@
 .main-header {
   display: block;
   max-height: 0;
-  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  transition: max-height $animated-menu-duration-close cubic-bezier(0, 1, 0, 1);
   overflow: clip;
 
   @include mq(md) {
@@ -40,8 +44,8 @@
 
   &.nav-open {
     display: block;
-    max-height: 1000px;
-    transition: max-height 1s ease-in-out;
+    max-height: $animated-menu-max-height;
+    transition: max-height $animated-menu-duration-open ease-in-out;
 
     @include mq(md) {
       display: flex;
@@ -58,14 +62,14 @@
     .nav-list {
       display: block;
       max-height: 0;
-      transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+      transition: max-height $animated-menu-duration-close cubic-bezier(0, 1, 0, 1);
     }
 
     &.active {
       .nav-list {
         display: block;
-        max-height: 1000px;
-        transition: max-height 1s ease-in-out;
+        max-height: $animated-menu-max-height;
+        transition: max-height $animated-menu-duration-open ease-in-out;
       }
     }
   }
@@ -77,14 +81,14 @@
     .nav-list {
       display: block;
       max-height: 0;
-      transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+      transition: max-height $animated-menu-duration-close cubic-bezier(0, 1, 0, 1);
     }
 
     &.active {
       .nav-list {
         display: block;
-        max-height: 1000px;
-        transition: max-height 1s ease-in-out;
+        max-height: $animated-menu-max-height;
+        transition: max-height $animated-menu-duration-open ease-in-out;
       }
     }
   }

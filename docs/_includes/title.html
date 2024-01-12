@@ -1,0 +1,15 @@
+{% if site.logo %}
+  <div class="site-logo" role="img" aria-label="{{ site.title }}"></div>
+{% else %}
+<div style="display:table-row; line-height: 0.85;">
+{% if site.version %}
+<!-- Firefox can't ignore whitespaces between the <span> elements... -->
+<span class="site-main-title">{{ site.title }}</span><span class="site-version">{{ site.version }}</span>
+{% else %}
+<span class="site-main-title">{{ site.title }}</span>
+{% endif %}
+</div>
+{% if site.subtitle %}
+<span class="site-subtitle">{{ site.subtitle }}</span>
+{% endif %}
+{% endif %}

@@ -2,7 +2,7 @@
 ---
 // Define "git_tag" in _config.yml to use ua-parser-helper.js
 const TOOL_NAME = "{{ site.title }}";
-const TOOL_TAG = "{{ site.git_tag }}";
+const TOOL_VERSION = "{{ site.version }}";
 
 function nullToStr(str) {
   return str == null ? "Undefined" : str;
@@ -86,7 +86,7 @@ function makeDownloadButton(result, id) {
     return "-x64";
   }
 
-  mainStr = TOOL_NAME + "-" + TOOL_TAG + "-";
+  mainStr = TOOL_NAME + "-" + TOOL_VERSION + "-";
   if (isWindows(result)) {
     mainStr += "Windows" + getArchSuffix(result) + ".zip";
   } else if (isMac(result)) {
@@ -95,7 +95,7 @@ function makeDownloadButton(result, id) {
     mainStr += "Linux" + getArchSuffix(result) + ".tar.bz2";
   }
 
-  mainURL = "https://github.com/{{ site.repository }}/releases/download/" + TOOL_TAG + "/" + mainStr;
+  mainURL = "https://github.com/{{ site.repository }}/releases/download/" + TOOL_VERSION + "/" + mainStr;
   mainHTML = `<a href="` + mainURL + `" class="btn btn-blue">` + 
              `<svg viewBox="0 0 16 16" class="icon" style="width:1em; color:white; vertical-align: -0.35em">
                 <use xlink:href="#svg-download"></use>

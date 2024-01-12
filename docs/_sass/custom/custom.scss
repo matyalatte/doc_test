@@ -18,9 +18,8 @@ h3,
 h4,
 h5,
 h6,
-.site-title,
 #toctitle {
-  font-weight: var(--base-text-weight-semibold, 600);;
+  font-weight: var(--base-text-weight-semibold, 600);
 }
 
 .main-content {
@@ -147,5 +146,25 @@ h6,
     padding: 1rem 0.5rem;
   }
 }
+
+// Add tool version and subtitle to header
+.site-title {
+  display: table;
+}
+
+.site-main-title {
+  font-weight: var(--base-text-weight-semibold, 600);
+}
+
+.site-version {
+  @include fs-3;
+  padding-left: 0.3rem;
+}
+
+.site-subtitle {
+  @include fs-2;
+  display: table-row;
+}
+
 
 @import "./animated_menu.scss";
